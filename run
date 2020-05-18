@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ $# -eq 0 ]; then
+  echo "Please provide a file name"
+  return 1
+fi
+
+g++ $1 -o out && ./out && rm out
