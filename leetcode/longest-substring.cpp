@@ -31,7 +31,7 @@ public:
 int main() {
   Solution sol = Solution();
   string str = " ";
-  //string str = "pwwkew";
+  // string str = "pwwkew";
   // string str = "abcabcbb";
   // string str = "aab";
   int res = sol.lengthOfLongestSubstring(str);
