@@ -44,6 +44,12 @@ public:
       }
       prevRemain--;
     }
+    int left = 0, right = ret.size() - 1;
+    while (left < right) {
+      vector<int> tmp = ret[left];
+      ret[left] = ret[right];
+      ret[right] = tmp;
+    }
     return ret;
   }
 };
